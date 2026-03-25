@@ -13,6 +13,11 @@ cask "taiku" do
   desc "Collaborative terminal sharing — desktop app with bundled CLI"
   homepage "https://taiku.live"
 
+  # Remove quarantine flag (app is not yet notarized).
+  preflight do
+    system_command "/usr/bin/xattr", args: ["-cr", "#{staged_path}/taiku.app"]
+  end
+
   app "taiku.app"
   # The .app bundle includes the CLI at Contents/MacOS/taiku.
   # Symlink it into the PATH so `taiku` works from terminal too.
