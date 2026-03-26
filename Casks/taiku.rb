@@ -3,10 +3,10 @@ cask "taiku" do
 
   if Hardware::CPU.arm?
     url "https://taiku-releases.s3.amazonaws.com/taiku-desktop-aarch64-apple-darwin.tar.gz"
-    sha256 "1ba00866f95804f5421ad42212b4d4bb2c4665a5269cd09ffc5ca905c23a2d85"
+    sha256 "78b9c0e39150081afde672f6f123ac5fef65d4a22e351596cf419d0c0183ecce"
   else
     url "https://taiku-releases.s3.amazonaws.com/taiku-desktop-x86_64-apple-darwin.tar.gz"
-    sha256 "eae80c69b3d4e99484d699692f5508da7bff026dff98c43bf8a0d817471f9aa6"
+    sha256 "e51d5171fd188aece065dc1ac8d1455118a7df4abad82057002da7281629fec8"
   end
 
   name "taiku"
