@@ -2,11 +2,11 @@ cask "taiku" do
   version "0.4.3"
 
   if Hardware::CPU.arm?
-    url "https://taiku-releases.s3.amazonaws.com/taiku-desktop-aarch64-apple-darwin.tar.gz"
-    sha256 "0294e11a02e8c87c7c589b3300e4486477c1a0339d015c10671bc1c7ffd4e747"
+    url "https://taiku-releases.s3.amazonaws.com/taiku-desktop-aarch64-apple-darwin.dmg"
+    sha256 "8c7b2d294dfa1b09021044f10e12c48a9494deea9dedcbfadba71ccd10aad866"
   else
-    url "https://taiku-releases.s3.amazonaws.com/taiku-desktop-x86_64-apple-darwin.tar.gz"
-    sha256 "1b545237594a8cea58ea1e24dd6408a1156a2bcf1a8df10806047309c1145cca"
+    url "https://taiku-releases.s3.amazonaws.com/taiku-desktop-x86_64-apple-darwin.dmg"
+    sha256 "9573a862f3df42168ba8bff8f5a0d01c002bd1ee08a43c4e721e50a2dfbe560a"
   end
 
   name "taiku"
