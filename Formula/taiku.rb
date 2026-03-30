@@ -7,20 +7,20 @@ class Taiku < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://taiku-releases.s3.amazonaws.com/taiku-aarch64-apple-darwin.tar.gz"
-      sha256 "f0bafc297047d5cb1f281000f19dd344036d1f2e3c61489ef3c9b95a88d3b1b0"
+      sha256 "b133f316a568b9d704d14b4e199bd3a9f7a7645521bb675179d9d6e7e63f2e0a"
     else
       url "https://taiku-releases.s3.amazonaws.com/taiku-x86_64-apple-darwin.tar.gz"
-      sha256 "f58f45a51e6489524f4848fad565bce1e80b75f04c4cf8afee539950de46afed"
+      sha256 "f7d1d2b99eaa0ddf8b572b7d26a0944bf3fd9b8d60c69bcbf9c1f57f20b9465e"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://taiku-releases.s3.amazonaws.com/taiku-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "28637de12f1ed85521b979b7edc6e1f44a077ddbfb7e4d01bf0cdb24be28688f"
+      sha256 "9edcd520ff5bf8c206c1fc9ce9a8d1c3fc8774e06ee7fafb7f27e2c4c4871810"
     else
       url "https://taiku-releases.s3.amazonaws.com/taiku-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "3cbaa0944220d68d10cba0978a2c5411dcb3dea6c1faec483f83f56dcd4ae900"
+      sha256 "ec3d365972a75fa9d7eb7025d9aeb714290d72da36bb29ca754316295a01a362"
     end
   end
 
