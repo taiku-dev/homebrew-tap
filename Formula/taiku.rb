@@ -1,26 +1,26 @@
 class Taiku < Formula
   desc "Collaborative terminal sharing — CLI"
   homepage "https://taiku.live"
-  version "1.0.30"
+  version "1.0.31"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://taiku-releases.s3.amazonaws.com/v1.0.30/taiku-aarch64-apple-darwin.tar.gz"
-      sha256 "1c4ac8c7aec8ba339aa9557480ab234d0400c0ea4f94e77b2fe781346849bf3b"
+      url "https://taiku-releases.s3.amazonaws.com/v1.0.31/taiku-aarch64-apple-darwin.tar.gz"
+      sha256 "fd3022554cc8dca150d1d3a41c990cdd1e31a47b8b8f15eb7707e26eda86c8db"
     else
-      url "https://taiku-releases.s3.amazonaws.com/v1.0.30/taiku-x86_64-apple-darwin.tar.gz"
-      sha256 "8624cf4d236698acfbee31e879472328022c05047ae0dcfbfcdec6c1d435ee98"
+      url "https://taiku-releases.s3.amazonaws.com/v1.0.31/taiku-x86_64-apple-darwin.tar.gz"
+      sha256 "bc6b82dab608565ad8e16f93153d382f48992106d5fb9e1ea9973dfeee0c6e68"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://taiku-releases.s3.amazonaws.com/v1.0.30/taiku-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "99e881a1da153fb078ac1c5507f3d611f86642ac25f38e10cb03921505c3ef8f"
+      url "https://taiku-releases.s3.amazonaws.com/v1.0.31/taiku-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "f44e2794c79cb686e210b5e1c2c37d8d5b75e4ec835e32f7dc3cd95de4fbf8b5"
     else
-      url "https://taiku-releases.s3.amazonaws.com/v1.0.30/taiku-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "016a3c100a4515c2f02d8cddc2949979fcb618113aa18647c91c008b592393b3"
+      url "https://taiku-releases.s3.amazonaws.com/v1.0.31/taiku-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "40be08ea326bfb703792be649c4b0423ea9409515b901e9486eab3c44c0f4313"
     end
   end
 
