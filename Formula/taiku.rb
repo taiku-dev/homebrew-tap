@@ -1,7 +1,7 @@
 class Taiku < Formula
   desc "Collaborative terminal sharing — CLI"
   homepage "https://taiku.live"
-  version "1.0.39"
+  version "1.0.40"
   license "MIT"
 
   on_macos do
@@ -10,21 +10,21 @@ class Taiku < Formula
     # and are refused by the install method below.
     depends_on macos: :monterey
     if Hardware::CPU.arm?
-      url "https://taiku-releases.s3.amazonaws.com/v1.0.39/taiku-aarch64-apple-darwin.tar.gz"
-      sha256 "cb4a642ddf7c7d0efddbf6b3db26a528e40d8c1b2b4f427a161cd271868304fb"
+      url "https://taiku-releases.s3.amazonaws.com/v1.0.40/taiku-aarch64-apple-darwin.tar.gz"
+      sha256 "923ecdaa188a15bbbfe971669be2b47f647ec61dcc4796d784919d3936a6c219"
     else
-      url "https://taiku-releases.s3.amazonaws.com/v1.0.39/taiku-x86_64-apple-darwin.tar.gz"
-      sha256 "9bd8236a5b06551caf6e12966240ac852d5301ca0d7388f29df6029c9f20519c"
+      url "https://taiku-releases.s3.amazonaws.com/v1.0.40/taiku-x86_64-apple-darwin.tar.gz"
+      sha256 "a88e204307e5db7f2da7ace4bd5558b8e2a23e738e1c63455546ba27e3dcabd4"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://taiku-releases.s3.amazonaws.com/v1.0.39/taiku-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "8567b2843686785120840708d4da89d30017f7ecb473f14e2392c6135fb5d989"
+      url "https://taiku-releases.s3.amazonaws.com/v1.0.40/taiku-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "ef62a711b21ce8c05c08cf5595fa04a717bd2aec96e0565ed4efeab9535831c8"
     else
-      url "https://taiku-releases.s3.amazonaws.com/v1.0.39/taiku-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "52aef58d18bb0fac99bed7ee97d68e9f95f573c82c460a8c16e8cd226dd83175"
+      url "https://taiku-releases.s3.amazonaws.com/v1.0.40/taiku-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "106e236dfd5d2ab5c5bd1cf1572753a6fb154e2bcdf3fc25e575efa3c3689423"
     end
   end
 
