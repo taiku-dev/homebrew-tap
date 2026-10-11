@@ -1,12 +1,12 @@
 cask "taiku" do
-  version "1.0.44"
+  version "1.0.45"
 
   if Hardware::CPU.arm?
-    url "https://taiku-releases.s3.amazonaws.com/v1.0.44/taiku-darwin-arm64.dmg"
-    sha256 "396ada31f2f14a64747197355bde01f6b213f5ccb788302e36baae8cd20568f4"
+    url "https://taiku-releases.s3.amazonaws.com/v1.0.45/taiku-darwin-arm64.dmg"
+    sha256 "0561c981f1443617c4ce185f7c356711fde9ce9a8a3cf171d208e4fbc2beedcf"
   else
-    url "https://taiku-releases.s3.amazonaws.com/v1.0.44/taiku-darwin-x64.dmg"
-    sha256 "ac487c28f3a03fa7ed7afd4121299e59b0b1f1fbc3c0ba48adf5021772dba663"
+    url "https://taiku-releases.s3.amazonaws.com/v1.0.45/taiku-darwin-x64.dmg"
+    sha256 "51d85d699a54a16964641a25d9f2c7ace673a7786b06db9d5a3dc9896d923797"
   end
 
   name "taiku"
